@@ -1,0 +1,31 @@
+<title>parking management system</title>
+<p>parking-list works!</p>
+<table>
+    <thead>
+      <tr>
+        <th>License Number</th>
+        <th>Vehicle Type</th>
+        <th>Owner Name</th>
+        <th>Owner Phone</th>
+        <th>Status</th>
+        <th>Address</th>
+        <th>Entry Time</th>
+        <th>Exit Time</th>
+        <th>Charge</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of parkingData">
+        <td>{{ entry.licenseNumber }}</td>
+        <td>{{ entry.vehicleType }}</td>
+        <td>{{ entry.ownerName }}</td>
+        <td>{{ entry.ownerPhone }}</td>
+        <td>{{ entry.status }}</td>
+        <td>{{ entry.address }}</td>
+        <td>{{ entry.entryTime }}</td>
+        <td>{{ entry.exitTime }}</td>
+        <td>{{ entry.charge }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
