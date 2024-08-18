@@ -28,4 +28,31 @@
       </tr>
     </tbody>
   </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Owner Name</th>
+        <th>Vehicle Type</th>
+        <th>License No</th>
+        <th>Entry Time</th>
+        <th>Exit Time</th>
+        <th>Status</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of parkingData">
+        <td>{{ entry.ownerName }}</td>
+        <td>{{ entry.vehicleType }}</td>
+        <td>{{ entry.licenseNumber }}</td>
+        <td>{{ entry.entryTime }}</td>
+        <td>{{ entry.exitTime }}</td>
+        <td>{{ entry.status }}</td>
+        <td>
+          <button (click)="(entry)">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   
